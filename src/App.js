@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 const config = {
   key:"6c04d4949ac86db24eed44c22d2ebe75",
@@ -8,8 +8,8 @@ const config = {
 function App() {
 
 const [query, setQuery] = useState('');
-
 const [weather, setWeather] = useState('');
+const [advice, setAdvice] = useState({});
 
 const search = event =>{
   if(event.key === "Enter"){
@@ -21,22 +21,19 @@ const search = event =>{
     });
   }
 }
-const dateBuilder = (d) =>{
 
-  let months = ["January", "February", "March", "April",
-                "May", "June", "July", "August", "September",
-                "Octomber", "November", "December"];
+  useEffect(() => {
+    async function fetchData() {
+      const res = await fetch("https://api.adviceslip.com/advice");
+      res
+        .json()
+        .then(res => setAdvice(res))
+        .catch(err => console.log(err));
+    }
 
-  let days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
+    fetchData();
 
-  let day = days[d.getDay()];
-  let date = d.getDate();
-  let month = months[d.getMonth()];
-  let year = d.getFullYear();
-
-  return `${day} ${date} ${month} ${year}`
-
-}
+  });
 
   return (
     <div className="app">
@@ -50,11 +47,24 @@ const dateBuilder = (d) =>{
              value={query}
              onKeyPress={search}/>
         </div>
+
+        <br></br>
+        <br></br>
+
+        <div className="cardApp">
+          <div className="card">
+            <h3 className="heading">{JSON.stringify(advice)}</h3>
+          </div>
+        </div>
+
+        <br></br>
+        <br></br>
+
     {(typeof weather.main != "undefined") ? (
+     
       <div>
         <div className="location-box">
           <div className="location">{weather.name}, {weather.sys.country}</div>
-          <div className="date">{dateBuilder(new Date())}</div>
         </div>
 
         <div className="weather-box">
@@ -66,8 +76,13 @@ const dateBuilder = (d) =>{
         </div>
      ) : ('')}
       </main>
+
+      <div className="footer">
+         <h1 className="footerText">Current time: {new Date().toLocaleTimeString()}</h1>    
+      </div>  
     </div>
   );
+    
 }
 
 export default App;
