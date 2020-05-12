@@ -1,4 +1,5 @@
 ## Proiect Cloud Computing
+---
 
 ### Aplicatia ofera posibilitatea de a cauta un oras pentru a afla temperatura in grade celcius si un mesaj aleatoriu amuzant sau incurajator 
 
@@ -15,11 +16,11 @@
 
 ![](/assets/api-structure.png/)
 
-### Requesturi si responses folosind POSTMAN
+### **Requesturi si responses folosind Postman**
 
 * Request de tip **GET** catre Open Weather API pentru a afisa vreamea din orasul Londra, UK.
 
-    **Endpoint** : 
+    **Endpoint:**  
 
     api.openweathermap.org/data/2.5/weather?q=London,uk&APPID=6c04d4949ac86db24eed44c22d2ebe75
 
@@ -80,15 +81,15 @@
     
     ### **Request: GET** - afiseaza un mesaj aleator
 
-    Endpoint:   https://api.adviceslip.com/advice
+    **Endpoint:**   https://api.adviceslip.com/advice
 
     ![](/assets/getadvice.PNG)
 
-    Raspuns aleator primit in aplicatia web
+    **Raspuns aleator primit in aplicatia web**
     ![](/assets/advice-app.PNG)
 
     ### **GET by id** - afiseaza mesajul cu id-ul 5
 
-    Endpoint: https://api.adviceslip.com/advice/5  
+    **Endpoint:** https://api.adviceslip.com/advice/5  
 
     ![](/assets/get-advice-by-id.PNG)
