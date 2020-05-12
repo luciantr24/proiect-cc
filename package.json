@@ -2,6 +2,7 @@
   "name": "proiect-cc",
   "version": "0.1.0",
   "private": true,
+  "start": "node server.js",
   "engines": {
     "npm": "5.7.1",
     "node": "9.5.0"
@@ -12,9 +13,11 @@
     "@testing-library/user-event": "^7.1.2",
     "axios": "^0.19.2",
     "express": "^4.17.1",
+    "express-favicon": "^2.0.1",
     "google-maps-react": "^2.0.6",
     "heroku": "^7.41.1",
     "mdbreact": "^4.26.0",
+    "path": "^0.12.7",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1"
