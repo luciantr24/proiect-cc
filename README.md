@@ -21,7 +21,7 @@
 
     api.openweathermap.org/data/2.5/weather?q=London,uk&APPID=6c04d4949ac86db24eed44c22d2ebe75
 
-    ![](/assets/get-weather.png/)
+    ![](/assets/get-weather.PNG/)
 
     **Response**
 
@@ -80,10 +80,10 @@
 
     Endpoint:   https://api.adviceslip.com/advice
 
-    ![](/assets/getadvice.png)
+    ![](/assets/getadvice.PNG)
 
     ### **GET by id** - afiseaza mesajul cu id-ul 5
 
     Endpoint: https://api.adviceslip.com/advice/5  
 
-    ![](/assets/get-advice-by-id.png)
+    ![](/assets/get-advice-by-id.PNG)
