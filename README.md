@@ -2,6 +2,8 @@
 
 ### Aplicatia ofera posibilitatea de a cauta un oras pentru a afla temperatura in grade celcius si un mesaj aleatoriu amuzant sau incurajator 
 
+#### Adresa pentru accesare aplicatiei: [https://cc-proiect.herokuapp.com/](https://cc-proiect.herokuapp.com/)
+
 ### Cele doua API-uri folosite sunt:
 
     * Open Weather API : https://openweathermap.org/api
