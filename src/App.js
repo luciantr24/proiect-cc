@@ -22,18 +22,18 @@ const search = event =>{
   }
 }
 
-  useEffect(() => {
-    async function fetchData() {
-      const res = await fetch("https://api.adviceslip.com/advice");
-      res
-        .json()
-        .then(res => setAdvice(res))
-        .catch(err => console.log(err));
-    }
+useEffect(() => {
+  async function fetchData() {
+    const res = await fetch("https://api.adviceslip.com/advice");
+    res
+      .json()
+      .then(res => setAdvice(res.slip.advice))
+      .catch(err => console.log(err));
+  }
 
-    fetchData();
+  fetchData();
 
-  });
+});
 
   return (
     <div className="app">
@@ -72,13 +72,15 @@ const search = event =>{
           {Math.round(weather.main.temp)}°c
           </div>
           <div className="weather">{weather.weather[0].main}</div>
+          <div className="weather1">Visibility: {weather.main.humidity} %</div>
+          <div className="weather1">Wind speed: {weather.wind.speed} km/h</div>
         </div>
         </div>
      ) : ('')}
       </main>
 
       <div className="footer">
-         <h1 className="footerText">Current time: {new Date().toLocaleTimeString()}</h1>    
+         <h1 className="footerText">Current time: {new Date().toLocaleTimeString()}</h1> 
       </div>  
     </div>
   );

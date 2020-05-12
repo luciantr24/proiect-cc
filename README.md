@@ -1,11 +1,11 @@
 ## Proiect Cloud Computing
 
-### Aplicatia ofera posibilitatea de a cauta un oras pentru a afla temeratura in grade celcius si un mesaj aleatoriu amuzant sau incurajator 
+### Aplicatia ofera posibilitatea de a cauta un oras pentru a afla temperatura in grade celcius si un mesaj aleatoriu amuzant sau incurajator 
 
 ### Cele doua API-uri folosite sunt:
 
-    * Open Weather API : api.openweathermap.org/data/2.5/
-    * Advices API : https://api.adviceslip.com/advice
+    * Open Weather API : https://openweathermap.org/api
+    * Advices API : https://api.adviceslip.com/
 
 ### Aplicatia foloseste React.js pentru partea de front-end. Aplicatia trimite request-uri de tip **GET** catre cele doua api-uri.
 
@@ -72,7 +72,7 @@
     ```
 
     **Afisare din aplicatie**
-    ![]()
+    ![](/assets/app-london.PNG)
 
 * ### Request  catre **Advices API** 
     
@@ -81,6 +81,9 @@
     Endpoint:   https://api.adviceslip.com/advice
 
     ![](/assets/getadvice.PNG)
+
+    Raspuns aleator primit in aplicatia web
+    ![](/assets/advice-app.PNG)
 
     ### **GET by id** - afiseaza mesajul cu id-ul 5
 
