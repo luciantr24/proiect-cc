@@ -42,7 +42,7 @@ useEffect(() => {
         <div className="search-box">
           <input type = "text" 
              className="search-bar" 
-             placeholder="Search..."
+             placeholder="Cauta un oras..."
              onChange={e => setQuery(e.target.value)}
              value={query}
              onKeyPress={search}/>
@@ -63,25 +63,26 @@ useEffect(() => {
     {(typeof weather.main != "undefined") ? (
      
       <div>
+
         <div className="location-box">
           <div className="location">{weather.name}, {weather.sys.country}</div>
         </div>
 
         <div className="weather-box">
-          <div className="temp">
-          {Math.round(weather.main.temp)}°c
-          </div>
+          <div className="temp"> {Math.round(weather.main.temp)}°c</div>
           <div className="weather">{weather.weather[0].main}</div>
           <div className="weather1">Visibility: {weather.main.humidity} %</div>
           <div className="weather1">Wind speed: {weather.wind.speed} km/h</div>
         </div>
-        </div>
+
+      </div>
      ) : ('')}
       </main>
 
       <div className="footer">
          <h1 className="footerText">Current time: {new Date().toLocaleTimeString()}</h1> 
       </div>  
+
     </div>
   );
     

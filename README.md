@@ -1,7 +1,7 @@
 ## Proiect Cloud Computing
 ---
 
-### Aplicatia ofera posibilitatea de a cauta un oras pentru a afla temperatura in grade celcius si un mesaj aleatoriu amuzant sau incurajator 
+### Aplicatia ofera posibilitatea de a cauta un oras pentru a afla detalii despre temperatura(grade celsius), umiditatea si viteza vantului si un mesaj aleatoriu amuzant sau incurajator 
 
 #### Adresa pentru accesare aplicatiei: [https://cc-proiect.herokuapp.com/](https://cc-proiect.herokuapp.com/)
 
