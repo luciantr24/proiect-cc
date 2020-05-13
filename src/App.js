@@ -10,14 +10,22 @@ function App() {
 const [query, setQuery] = useState('');
 const [weather, setWeather] = useState('');
 const [advice, setAdvice] = useState({});
+const [error, setError] = useState('');
 
 const search = event =>{
   if(event.key === "Enter"){
     fetch(`${config.base}weather?q=${query}&units=metric&APPID=${config.key}`)
     .then(res => res.json())
     .then(result => {
+      if(result.cod === '404')
+      {
+        setError("Orasul nu a fost gasit");
+      }else{
+        setError('');
+      }
+      
       setWeather(result);
-      setQuery('');
+      setQuery('');  
     });
   }
 }
@@ -79,6 +87,10 @@ useEffect(() => {
      ) : ('')}
       </main>
 
+      <div>
+        <h1 className="handleMessage">{error}</h1> 
+      </div>
+      
       <div className="footer">
          <h1 className="footerText">Current time: {new Date().toLocaleTimeString()}</h1> 
       </div>  

@@ -12,6 +12,8 @@
 
 ### Aplicatia foloseste React.js pentru partea de front-end. Aplicatia trimite request-uri de tip **GET** catre cele doua api-uri.
 
+### Pentru a folosi aplicatia este nevoie de introducerea unui nume de oras in caseta de cautare (ex. London, Bucharest, Madrid etc) iar aplicatia va returna imediat datele despre acesta. Pe langa informatiile legate de vreme se va genera si un mesaj aleator venit din request-ul de tip GET catre Advices API
+
 ### Structura aplicatie 
 
 ![](/assets/api-structure.png/)
@@ -75,6 +77,7 @@
     ```
 
     **Afisare din aplicatie**
+
     ![](/assets/app-london.PNG)
 
 * ### Request  catre **Advices API** 
@@ -93,3 +96,14 @@
     **Endpoint:** https://api.adviceslip.com/advice/5  
 
     ![](/assets/get-advice-by-id.PNG)
+
+### Pentru a folosi aplicatia local
+    1. Clonati sau downloadati repository-ul
+
+    2.  Rulati
+        
+        2.1 npm install
+
+        2.2 npm start
+
+            
