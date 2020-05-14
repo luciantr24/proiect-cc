@@ -1,7 +1,9 @@
 ## Proiect Cloud Computing
 ---
 
-### Aplicatia ofera posibilitatea de a cauta un oras pentru a afla detalii despre temperatura(grade celsius), umiditatea si viteza vantului si un mesaj aleatoriu amuzant sau incurajator 
+### Aplicatia ofera posibilitatea de a cauta un oras pentru a afla detalii despre temperatura(grade celsius), vizibiliatea si viteza vantului si un mesaj aleatoriu amuzant sau incurajator 
+
+### Unul dintre motivele legaturii dintre mesaje si vreme este ca, de exemplu daca vremea nu este cum ne dorim, un mesaj amuzant ne poate face ziua mai buna.
 
 #### Adresa pentru accesare aplicatiei: [https://cc-proiect.herokuapp.com/](https://cc-proiect.herokuapp.com/)
 
