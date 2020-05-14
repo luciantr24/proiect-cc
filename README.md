@@ -10,7 +10,10 @@
 ### Cele doua API-uri folosite sunt:
 
     * Open Weather API : https://openweathermap.org/api
+      * Autentificare cu API KEY
+      
     * Advices API : https://api.adviceslip.com/
+      * Nu necesita API KEY
 
 ### Aplicatia foloseste React.js pentru partea de front-end. Aplicatia trimite request-uri de tip **GET** catre cele doua api-uri.
 
